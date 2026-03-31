@@ -6,7 +6,7 @@ const connectDB = require('./config/database');
 const PORT = process.env.PORT || 3000;
 
 const iniciar = async () => {
-  await connectDB();
+   connectDB();
 
   app.listen(PORT, () => {
     console.log(`🚀 Servidor rodando na porta ${PORT}`);
